@@ -84,6 +84,34 @@
     <Reference Include="Glimpse.Mvc5">
       <HintPath>..\packages\Glimpse.Mvc5.1.5.3\lib\net45\Glimpse.Mvc5.dll</HintPath>
     </Reference>
+    <Reference Include="Microsoft.AI.Agent.Intercept, Version=1.2.1.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL">
+      <HintPath>..\packages\Microsoft.ApplicationInsights.Agent.Intercept.1.2.1\lib\net45\Microsoft.AI.Agent.Intercept.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="Microsoft.AI.DependencyCollector, Version=2.1.0.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL">
+      <HintPath>..\packages\Microsoft.ApplicationInsights.DependencyCollector.2.1.0\lib\net45\Microsoft.AI.DependencyCollector.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="Microsoft.AI.PerfCounterCollector, Version=2.1.0.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL">
+      <HintPath>..\packages\Microsoft.ApplicationInsights.PerfCounterCollector.2.1.0\lib\net45\Microsoft.AI.PerfCounterCollector.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="Microsoft.AI.ServerTelemetryChannel, Version=2.1.0.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL">
+      <HintPath>..\packages\Microsoft.ApplicationInsights.WindowsServer.TelemetryChannel.2.1.0\lib\net45\Microsoft.AI.ServerTelemetryChannel.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="Microsoft.AI.Web, Version=2.1.0.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL">
+      <HintPath>..\packages\Microsoft.ApplicationInsights.Web.2.1.0\lib\net45\Microsoft.AI.Web.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="Microsoft.AI.WindowsServer, Version=2.1.0.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL">
+      <HintPath>..\packages\Microsoft.ApplicationInsights.WindowsServer.2.1.0\lib\net45\Microsoft.AI.WindowsServer.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="Microsoft.ApplicationInsights, Version=2.1.0.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL">
+      <HintPath>..\packages\Microsoft.ApplicationInsights.2.1.0\lib\net46\Microsoft.ApplicationInsights.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
     <Reference Include="Microsoft.CSharp" />
     <Reference Include="Microsoft.Owin, Version=3.0.1.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL">
       <SpecificVersion>False</SpecificVersion>
@@ -220,6 +248,8 @@
     <Compile Include="Startup.cs" />
   </ItemGroup>
   <ItemGroup>
+    <Content Include="Content\font-awesome.css" />
+    <Content Include="Content\font-awesome.min.css" />
     <Content Include="Content\fonts\bootstrap\glyphicons-halflings-regular.woff2" />
     <Content Include="Content\icons\android-chrome-144x144.png" />
     <Content Include="Content\icons\android-chrome-192x192.png" />
@@ -315,11 +345,58 @@
     <Content Include="Content\fontawesome\bordered-pulled.less" />
     <Content Include="Content\fontawesome\animated.less" />
     <Content Include="Content\fonts\fontawesome\fontawesome-webfont.woff2" />
+    <Content Include="ApplicationInsights.config">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Content\magnific-popup.css" />
+    <Content Include="Content\owl.carousel.css" />
+    <Content Include="Content\responsive.css" />
+    <Content Include="Content\style.css" />
+    <Content Include="fonts\fontawesome-webfont.svg" />
+    <Content Include="fonts\FontAwesome.otf" />
+    <Content Include="fonts\fontawesome-webfont.woff2" />
+    <Content Include="fonts\fontawesome-webfont.woff" />
+    <Content Include="fonts\fontawesome-webfont.ttf" />
+    <Content Include="fonts\fontawesome-webfont.eot" />
     <None Include="NWebsecConfig\HttpHeaderSecurityModuleConfig.xsd">
       <SubType>Designer</SubType>
     </None>
     <None Include="ReadMe.html" />
     <None Include="Scripts\jquery-2.2.3.intellisense.js" />
+    <Content Include="images\blog\01.jpg" />
+    <Content Include="images\blog\02.jpg" />
+    <Content Include="images\blog\03.jpg" />
+    <Content Include="images\icon\apple-touch-icon-114-precomposed.png" />
+    <Content Include="images\icon\apple-touch-icon-144-precomposed.png" />
+    <Content Include="images\icon\apple-touch-icon-57-precomposed.png" />
+    <Content Include="images\icon\apple-touch-icon-72-precomposed.png" />
+    <Content Include="images\icon\favicon.png" />
+    <Content Include="images\img1.png" />
+    <Content Include="images\img2.png" />
+    <Content Include="images\img3.png" />
+    <Content Include="images\img4.png" />
+    <Content Include="images\img5.png" />
+    <Content Include="images\img6.png" />
+    <Content Include="images\logo.png" />
+    <Content Include="images\members\team1.jpg" />
+    <Content Include="images\members\team2.jpg" />
+    <Content Include="images\office\02.jpg" />
+    <Content Include="images\office\03.jpg" />
+    <Content Include="images\office\04.jpg" />
+    <Content Include="images\preloader.gif" />
+    <Content Include="images\slider\01.jpg" />
+    <Content Include="images\slider\02.jpg" />
+    <Content Include="images\slider\03.jpg" />
+    <Content Include="images\slider\04.jpg" />
+    <Content Include="images\testimonial-bg.jpg" />
+    <Content Include="images\works\portfolio-1.jpg" />
+    <Content Include="images\works\portfolio-2.jpg" />
+    <Content Include="images\works\portfolio-3.jpg" />
+    <Content Include="images\works\portfolio-4.jpg" />
+    <Content Include="images\works\portfolio-5.jpg" />
+    <Content Include="images\works\portfolio-6.jpg" />
+    <Content Include="Scripts\ai.0.22.19-build00125.js" />
+    <Content Include="Scripts\ai.0.22.19-build00125.min.js" />
     <Content Include="Scripts\jquery-2.2.3.js" />
     <Content Include="Scripts\jquery-2.2.3.min.js" />
     <None Include="Scripts\jquery.validate-vsdoc.js" />
@@ -404,6 +481,16 @@
     <Content Include="Scripts\jquery-2.2.3.min.map" />
     <Content Include="Scripts\jquery.validate.unobtrusive.js" />
     <Content Include="Scripts\jquery.validate.unobtrusive.min.js" />
+    <Content Include="Scripts\js\jquery.counterup.min.js" />
+    <Content Include="Scripts\js\jquery.fitvids.js" />
+    <Content Include="Scripts\js\jquery.isotope.min.js" />
+    <Content Include="Scripts\js\jquery.magnific-popup.min.js" />
+    <Content Include="Scripts\js\jquery.parallax.js" />
+    <Content Include="Scripts\js\masonry.pkgd.min.js" />
+    <Content Include="Scripts\js\owl.carousel.min.js" />
+    <Content Include="Scripts\js\scripts.js" />
+    <Content Include="Scripts\js\smoothscroll.js" />
+    <Content Include="Scripts\js\waypoints.min.js" />
     <Content Include="Scripts\modernizr-2.8.3.js" />
     <Content Include="Scripts\site.js" />
     <Content Include="Scripts\_references.js" />
@@ -430,6 +517,7 @@
     <Content Include="Views\Error\Unauthorized.cshtml" />
     <Content Include="Views\Error\Forbidden.cshtml" />
     <Content Include="Views\Error\MethodNotAllowed.cshtml" />
+    <Content Include="Views\Shared\_Header.cshtml" />
   </ItemGroup>
   <ItemGroup>
     <Folder Include="App_Data\" />

@@ -35,7 +35,13 @@
             bundles.Add(new StyleBundle(
                 "~/Content/css")
                 .Include("~/Content/bootstrap/site.css")
-                .Include("~/Content/site.css"));
+                .Include("~/Content/site.css")
+                .Include("~/Content/owl.carousel.css.css")
+                .Include("~/Content/magnific-popup.css")
+                .Include("~/Content/style.css")
+                .Include("~/Content/responsive.css")
+
+                );
 
             // Font Awesome - Icons using font (http://fortawesome.github.io/Font-Awesome/).
             bundles.Add(new StyleBundle(
@@ -62,7 +68,17 @@
         {
             // jQuery - The JavaScript helper API (http://jquery.com/).
             Bundle jqueryBundle = new ScriptBundle("~/bundles/jquery", ContentDeliveryNetwork.Google.JQueryUrl)
-                .Include("~/Scripts/jquery-{version}.js");
+                .Include("~/Scripts/jquery-{version}.js")
+                .Include("~/Scripts/js/jquery.parallax.js")
+                .Include("~/Scripts/js/smoothscroll.js")
+                .Include("~/Scripts/js/masonry.pkgd.min.js")
+                .Include("~/Scripts/js/jquery.fitvids.js")
+                .Include("~/Scripts/js/owl.carousel.min.js")
+                .Include("~/Scripts/js/jquery.counterup.min.js")
+                .Include("~/Scripts/js/waypoints.min.js")
+                .Include("~/Scripts/js/jquery.isotope.min.js")
+                .Include("~/Scripts/js/jquery.magnific-popup.min.js")
+                .Include("~/Scripts/js/scripts.js");
             bundles.Add(jqueryBundle);
 
             // jQuery Validate - Client side JavaScript form validation (http://jqueryvalidation.org/).
@@ -105,6 +121,7 @@
                 .Include("~/Scripts/Fallback/styles.js")
                 .Include("~/Scripts/Fallback/scripts.js")
                 .Include("~/Scripts/site.js");
+
             bundles.Add(failoverCoreBundle);
         }
     }
