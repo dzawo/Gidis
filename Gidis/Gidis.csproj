@@ -388,6 +388,10 @@
     <Content Include="images\slider\02.jpg" />
     <Content Include="images\slider\03.jpg" />
     <Content Include="images\slider\04.jpg" />
+    <Content Include="images\slider\Key.jpg" />
+    <Content Include="images\slider\Road.jpg" />
+    <Content Include="images\slider\signal-hill-cape-town.jpg" />
+    <Content Include="images\slider\Trailler.jpg" />
     <Content Include="images\testimonial-bg.jpg" />
     <Content Include="images\works\portfolio-1.jpg" />
     <Content Include="images\works\portfolio-2.jpg" />
@@ -517,7 +521,12 @@
     <Content Include="Views\Error\Unauthorized.cshtml" />
     <Content Include="Views\Error\Forbidden.cshtml" />
     <Content Include="Views\Error\MethodNotAllowed.cshtml" />
-    <Content Include="Views\Shared\_Header.cshtml" />
+    <Content Include="Views\Shared\_MetaTags.cshtml" />
+    <Content Include="Views\Shared\_Menu.cshtml" />
+    <Content Include="Views\Home\_Slider.cshtml" />
+    <Content Include="Views\Home\_Services.cshtml" />
+    <Content Include="Views\Shared\_Footer.cshtml" />
+    <Content Include="Views\Home\_Contact.cshtml" />
   </ItemGroup>
   <ItemGroup>
     <Folder Include="App_Data\" />

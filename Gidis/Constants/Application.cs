@@ -2,7 +2,7 @@
 {
     public class Application
     {
-        public const string Name = "ASP.NET MVC Boilerplate";
-        public const string ShortName = "Boilerplate";
+        public const string Name = "Gidis Transport";
+        public const string ShortName = "Gidis";
     }
 }
